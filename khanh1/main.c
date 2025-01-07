@@ -10,16 +10,16 @@ int main(int argc, char *argv[]) {
     loadFile(users, &userCount);
 
     do {
-        menuStart();  // Hi?n th? menu b?t d?u
+        menuStart();  
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
         switch (choice) {
             case 1:
-                account(&role);  // Xác d?nh vai trò ngu?i dùng
+                account(&role);  
                 if (role == 1) {
                     do {
-                        menuAdmin();  // Hi?n th? menu cho qu?n tr? viên
+                        menuAdmin(); 
                         printf("Enter your choice: ");
                         scanf("%d", &choice);
 
